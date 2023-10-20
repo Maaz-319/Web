@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">        
+        <title>
+        </title>    
+    </head>
+    <body>
+        <ul id="messages"></ul>
+        <input id="textbox" type="text">
+        <button id="button">Send</button>
+        <script type="text/javascript">
+            var messages = document.getElementById("messages")
+            var textbox = document.getElementById("textbox")
+            var button = document.getElementById("button")
+            
+            button.addEventListener("click", function(){
+                var newMessage = document.createElement("li")
+                newMessage.innerHTML = textbox.value
+                messages.appendChild(newMessage)  
+                textbox.value = ""  
+            })
+        </script>  
+    </body>
+</html>

@@ -1,0 +1,59 @@
+@keyframes animationbox{
+    
+    0%{
+        background-color: forestgreen;
+
+    }
+    25%{
+        background-color:lightslategrey;
+
+
+    }
+    50%{
+        background-color: orangered;
+
+
+    }
+    70%{
+        background-color: orange;
+        transform: scale(2.5);
+
+    }
+    100%{
+        background-color: cyan;
+        transform: scale(1);
+
+    }
+}
+
+
+
+@keyframes animationbox_2{
+    
+ 
+    70%{
+        background-color: orange;
+        transform: scale(2.5);
+
+    }
+    100%{
+        background-color: cyan;
+        transform: scale(1);
+    }
+}
+.animationbox:hover{
+    animation-name: animationbox;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.animationbox:hover{
+    animation-name: animationbox_2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+

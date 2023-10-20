@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">        
+        <title>
+        </title>    
+    </head>
+    <body>
+        <script <!--src="start.js"-->
+            var password = "Maaz"
+            var user
+            var count = 4
+            var error = false
+            while (user != password & !error) {
+                if(count > 0)
+                {
+                    user = window.prompt("Enter Password " + " " + count + " turn")
+                    count--
+                }else{
+                    error = true
+                }
+            }
+
+            if (error){
+                document.writeln("<h1>Atempts limit succeed</h1>")
+            }else{
+                document.writeln("<h1>Correct Password<br>Welcome Maaz</h1>")
+            }
+        </script>  
+    </body>
+</html>

@@ -1,0 +1,46 @@
+
+@keyframes color {
+    0% {
+        background-color: orangered;
+        left: 0px;
+        top:0px;
+    }
+    
+    20% {
+        background-color: violet; 
+        left:900px;
+        top:0px;
+        border-radius: 20%;
+    }
+    50% {
+        background-color: blueviolet; 
+        left:900px; 
+        top:500px;
+        border-radius: 40%;
+    }
+    80% {
+        background-color: palevioletred;  
+        left:10px; 
+        top:500px;
+        border-radius: 60%;
+    }
+    100% {
+        background-color:yellowgreen;
+        left:0px;  
+        top:0px;
+        border-radius: 100%; 
+    }
+    
+    
+}
+
+
+.animationbox{
+position: relative;
+animation-name: color;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+}
+

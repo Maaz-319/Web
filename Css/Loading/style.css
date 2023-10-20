@@ -1,0 +1,66 @@
+@keyframes circle {
+    0%{
+        border-color: orangered;
+        transform: scale(1);
+    }
+    25%{
+        border-color: orange;
+    }
+    50%{
+        border-color: darkorange;
+    }
+    75%{
+        border-color: red;
+        transform: scale(2);
+    }
+    100%{
+        border-color: lightblue;
+        transform: scale(1);
+    }
+}
+
+@keyframes square_ {
+    20%{
+        border-color: lightblue;
+        border-width: 10px;
+    }
+    50%{
+        border-color: palevioletred;
+        border-width: 20px;
+    }
+    80%{
+        border-color: yellow;
+        transform: rotate(360deg);
+        border-width: 30px;
+    }
+    100%{
+        border-color: coral;
+        transform: rotate(0deg);
+        border-width: 5px;
+    }
+
+}
+
+
+
+.circle_{
+    animation-name: circle;
+    border: 15px solid black;
+    animation-direction: alternate;
+    margin: 0 auto;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.square{
+    animation-name: square_;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border: 5px solid limegreen;
+    animation-direction: alternate-reverse;
+}

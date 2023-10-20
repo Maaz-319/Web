@@ -1,0 +1,21 @@
+
+@keyframes change-color {
+    0% {background-color: red;}
+    10% {background-color: salmon;}
+    20% {background-color: aquamarine;}
+    30% {background-color: goldenrod;}
+    40% {background-color: orange;}
+    50% {background-color: green;}
+    60% {background-color: black;}
+    70% {background-color: rgb(55, 0, 255);}
+    80% {background-color: blueviolet;}
+    90% {background-color: palevioletred;}
+    100% {background-color: darkred; }
+    
+}
+
+.change-color:hover{
+animation-name: change-color;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}

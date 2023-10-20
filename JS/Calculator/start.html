@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">        
+        <title>
+        </title>    
+    </head>
+    <body>
+        <script <!--src="start.js"-->
+            var num1 = 0
+var num2 = 0
+var oper = ''
+var agin = ""
+
+num1 = parseFloat(window.prompt("Enter first number"))
+oper = window.prompt("Now enter a operator(+, -, /, *)")
+num2 = parseFloat(window.prompt("Enter second number"))
+
+switch(oper){
+    case '+':
+        document.write(num1 + " " + "+ " +  + num2 + " " + " = ")
+        document.writeln(num1 + num2)
+    break
+    case '/':
+        document.write(num1 + " " + "/ " +  + num2 + " " + " = ")
+        document.writeln(num1 / num2)
+    break
+    case '*':
+        document.write(num1 + " " + "* " +  + num2 + " " + " = ")
+        document.writeln(num1 * num2)
+    break
+    case '-':
+        document.write(num1 + " " + "- " +  + num2 + " " + " = ")
+        document.writeln(num1 - num2)
+    break
+}
+        </script>  
+    </body>
+</html>
