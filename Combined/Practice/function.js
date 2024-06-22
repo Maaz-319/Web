@@ -1,5 +1,5 @@
 alert("Connection to database successfull!")
-const email = ['maazbinaasif123@outlook.com', "maazbinaasif@gmail.com"]
+const email = ['email1@outlook.com', "email2@gmail.com"]
 const pass = ["password", "password2"]
 
 function signin(){
