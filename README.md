@@ -36,4 +36,4 @@ We welcome contributions! If you have a useful Web Development program you'd lik
 Enjoy coding and exploring these Web programs! If you have any questions or feedback, feel free to open an issue in the repository.
 
 # Profile
-github.com/maaz-319
+[github.com/maaz-319](https://github.com/Maaz-319/)
