@@ -45,7 +45,6 @@ Contributions are what make the open-source community such an amazing place to l
 2. Create Issues.
 
 ## Contact
-Maaz - [My Github](https://github.com/maaz-319)
-Email - [Email](maazbinaasif123@gmail.com)
+My Github - [Maaz-319](https://github.com/maaz-319)
 
 Project Link: [https://github.com/Maaz-319/Web/tree/main/Combined/To-Do%20List](https://github.com/Maaz-319/Web/tree/main/Combined/To-Do%20List)
