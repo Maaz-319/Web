@@ -1,0 +1,98 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-color: #333;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Post preview styling */
+.post-1-preview {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    width: calc(33% - 40px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.post-1-preview:hover {
+    transform: translateY(5px);
+}
+
+/* Image styling */
+#image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+/* Title styling */
+#page1_title {
+    color: #007bff;
+    padding: 20px 0;
+}
+
+/* Excerpt styling */
+.excerpt {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Header styling */
+#page_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: aliceblue;
+    height: 50px;
+    text-align: center;
+    background-color: darkslategrey;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#page-footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: aliceblue;
+    height: 30px;
+    text-align: center;
+    background-color: darkslategrey;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .post-1-preview {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .post-1-preview {
+        width: 100%;
+    }
+}

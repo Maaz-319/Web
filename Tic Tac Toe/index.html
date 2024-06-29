@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTT | By Maaz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wins-counter-container">
+        <div id="playerX-wins-counter">Player X Wins: 0</div>
+        <hr style="width: 20%">
+        <div id="playerO-wins-counter">Player O Wins: 0</div>
+    </div>
+
+    <div id="buttons-container">
+        <table>
+            <tr>
+                <td><button id="btn-1" onclick="checkMove('1')">&nbsp;</button></td>
+                <td><button id="btn-2" onclick="checkMove('2')">&nbsp;</button></td>
+                <td><button id="btn-3" onclick="checkMove('3')">&nbsp;</button></td>
+            </tr>
+            <!-- <tr>
+                <td colspan="3"><hr></td>
+            </tr> -->
+            <tr>
+                <td><button id="btn-4" onclick="checkMove('4')">&nbsp;</button></td>
+                <td><button id="btn-5" onclick="checkMove('5')">&nbsp;</button></td>
+                <td><button id="btn-6" onclick="checkMove('6')">&nbsp;</button></td>
+            </tr>
+            <!-- <tr>
+                <td colspan="3"><hr></td>
+            </tr> -->
+            <tr>
+                <td><button id="btn-7" onclick="checkMove('7')">&nbsp;</button></td>
+                <td><button id="btn-8" onclick="checkMove('8')">&nbsp;</button></td>
+                <td><button id="btn-9" onclick="checkMove('9')">&nbsp;</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="reset-container">
+        <button id="reset-btn" onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <div id="turns-label-container">
+        <p id="turns-label">Player Turn: O</p>
+    </div>
+
+    <div id="mute-button-container">
+        <button id="mute-button" onclick="toggleMute()">&#128263;</button>
+    </div>
+</body>
+</html>

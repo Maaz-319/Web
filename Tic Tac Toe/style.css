@@ -1,0 +1,81 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+#wins-counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+#playerX-wins-counter {
+    font-size: 36px;
+}
+
+#playerO-wins-counter {
+    font-size: 36px;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+button {
+    background: linear-gradient(90deg, purple 0%, #FFA500 100%);
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: red;
+}
+
+#reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#turns-label-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#turns-label {
+    font-size: 36px;
+    color: aliceblue;
+}
+
+#mute-button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
