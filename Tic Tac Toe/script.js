@@ -1,7 +1,7 @@
 var player = 'X';
 var gameOver = false;
-var playerXWins = localStorage.playerXWins;
-var playerOWins = localStorage.player_OWins;
+var playerXWins = 0;
+var playerOWins = 0;
 var clickSound = new Audio('click.mp3');
 var victorySound = new Audio('victory.mp3');
 var backgroundAudio = new Audio('bg.mp3');
@@ -45,11 +45,9 @@ function doGameOver(player) {
     }
     if (player === 'X') {
         playerXWins++;
-        localStorage.playerXWins = playerXWins;
         document.getElementById("playerX-wins-counter").innerHTML = "Player X Wins: " + playerXWins;
     } else {
         playerOWins++;
-        localStorage.player_OWins = playerOWins;
         document.getElementById("playerO-wins-counter").innerHTML = "Player O Wins: " + playerOWins;
     }
     victorySound.play().catch(error => console.error("Audio play failed:", error));
@@ -70,6 +68,7 @@ function resetGame() {
     }
     player = 'X';
     gameOver = false;
+    document.getElementById("turns-label").innerHTML = "Player Turn: O";
 }
 
 function toggleMute() {
