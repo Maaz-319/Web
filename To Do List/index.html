@@ -5,17 +5,26 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>To-Do List</title>
 
-    <h2 style="color: white; font-family: 'Comic Sans Ms'; text-decoration: underline; text-align: center;">To-Do List |
-        by Maaz</h2>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function () {
+            $('#input').hide().slideDown(1000).focus();;
+            $('.clear_btn').hide().fadeIn(3000);
+            $("#add_task_btn").hide().fadeIn(2000);
+            $("#list").hide().slideDown(2000);
+        });
+    </script>
 </head>
 
 <body>
+    <h2 id="heading" style="color: white; font-family: 'Comic Sans Ms'; text-decoration: underline; text-align: center;">To-Do List |
+        by Maaz</h2>
 
     <script src="script.js" type="text/javascript"></script>
 
     <div>
         <input type="text" id="input" placeholder="Enter your task here...">
-        <button onclick="addTask()">Add Task</button>
+        <button onclick="addTask()" id="add_task_btn">Add Task</button>
     </div>
 
     <div style="text-align: center;">
