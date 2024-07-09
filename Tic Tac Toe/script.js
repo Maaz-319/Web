@@ -2,10 +2,12 @@ var player = 'X';
 var gameOver = false;
 var playerXWins = 0;
 var playerOWins = 0;
-var clickSound = new Audio('click.mp3');
-var victorySound = new Audio('victory.mp3');
+var clickSoundX = new Audio('playerX.wav');
+var clickSoundO = new Audio('playerO.wav');
+var victorySound = new Audio('victory.wav');
 var backgroundAudio = new Audio('bg.mp3');
-clickSound.loop = false;
+clickSoundX.loop = false;
+clickSoundO.loop = false;
 victorySound.loop = false;
 backgroundAudio.loop = true;
 
@@ -16,7 +18,11 @@ function checkMove(btnId) {
         alert("Invalid move!");
         return;
     }
-    clickSound.play().catch(error => console.error("Audio play failed:", error));
+    if (player == 'X') {
+        clickSoundX.play().catch(error => console.error("Audio play failed:", error));
+    }else {
+        clickSoundO.play().catch(error => console.error("Audio play failed:", error));
+    }
 
     document.getElementById("turns-label").innerHTML = "Player Turn: " + player;
     if (!gameOver) {
