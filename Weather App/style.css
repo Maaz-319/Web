@@ -1,5 +1,7 @@
 body {
-    background-color: teal;
+    /* background-color: teal; */
+    background-image: url('bg.png');
+    background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;

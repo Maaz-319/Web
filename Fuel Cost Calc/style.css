@@ -1,5 +1,7 @@
 body {
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    background-image: url('bg.png');
+    background-attachment: fixed;
 }
 
 input {

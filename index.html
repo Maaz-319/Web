@@ -11,18 +11,22 @@
         $(function () {
             $('.post-1-preview').hide().slideDown(1000);
             $('#page-footer').hide().slideDown(2000);
-            $(".nav_bar").hide().slideDown(2000);
+            $('#nav-toggle').click(function () {
+                $('.nav_bar').slideToggle(200);
+            });
         });
     </script>
 </head>
 
-<body>
+<body data-bs-theme="dark">
     <div class="content">
+        <button id="nav-toggle">&#128307;</button>
         <nav class="nav_bar">
             <ul>
-                <li><a href="https://github.com/maaz-319" target="_blank">About</a></li>
                 <li><a href="https://github.com/maaz-319/web" target="_blank">Code</a></li>
                 <li><a href="mailto:maazbinaasif123@outlook.com">Email</a></li>
+                <li><a href="https://github.com/maaz-319">Github</a></li>
+                <li><a href="https://linkedin.com/in/maazbinasif">LinkedIn</a></li>
             </ul>
         </nav>
 

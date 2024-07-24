@@ -23,7 +23,9 @@ button {
 }
 
 body {
-    background-color: darkslategray;
+    /* background-color: darkslategray; */
+    background-image: url('bg.png');
+    background-attachment: fixed;
 }
 
 .clear_btn {

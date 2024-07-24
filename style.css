@@ -1,7 +1,8 @@
 /* General body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('bg.png');
+    background-attachment: fixed;
     margin: 0;
     padding: 20px;
     background-color: #333;
@@ -77,7 +78,7 @@ body {
     position: sticky;
     bottom: 0;
     left: 0;
-    right: 0;    
+    right: 0;
     color: aliceblue;
     height: 20px;
     text-align: center;
@@ -87,10 +88,17 @@ body {
     padding: 10px 0;
 }
 
-nav {
-    background-color: darkslategrey;
-    padding: 10px 0;
-    border-radius: 20px;
+#nav-toggle {
+    background-color: #333333;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    color: #eee;
+}
+
+#nav-toggle:hover {
+    background-color: #555;
+    border-radius: 3px;
 }
 
 nav ul {
@@ -110,6 +118,37 @@ nav ul li a {
     text-decoration: none;
     padding: 8px 16px;
     transition: background-color 0.3s;
+}
+
+.nav_bar {
+    display: none;
+    background-color: darkslategrey;
+    padding: 10px 0;
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    /* Adjust based on your button's position */
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_bar ul li {
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.nav_bar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_bar.show {
+    display: block;
 }
 
 nav ul li a:hover {
