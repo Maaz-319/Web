@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function () {
+            $('.post-1-preview').hide().slideDown(1000);
+            $('#page-footer').hide().slideDown(2000);
+            $('#nav-toggle').click(function () {
+                $('.nav_bar').slideToggle(200);
+            });
+        });
+    </script>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="content">
+        <button id="nav-toggle">&#128307;</button>
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="https://github.com/maaz-319/web" target="_blank">Code</a></li>
+                <li><a href="mailto:maazbinaasif123@outlook.com">Email</a></li>
+                <li><a href="https://github.com/maaz-319">Github</a></li>
+                <li><a href="https://linkedin.com/in/maazbinasif">LinkedIn</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+
+            <div class="post-1-preview" id="post_1_preview">
+                <a href="To Do List/index.html">
+                    <h2 id="page1_title">To-Do List</h2>
+                </a>
+            </div>
+            <!-- ========================================================================================================== -->
+            <div class="post-1-preview" id="post_1_preview">
+                <a href="Number Guessing Game/index.html">
+                    <h2 id="page1_title">Number Guessing Game</h2>
+                </a>
+            </div>
+            <!-- ========================================================================================================== -->
+            <div class="post-1-preview" id="post_1_preview">
+                <a href="Tic Tac Toe/index.html">
+                    <h2 id="page1_title">Tic Tac Toe</h2>
+                </a>
+            </div>
+            <!-- ========================================================================================================== -->
+            <div class="post-1-preview" id="post_1_preview">
+                <a href="Fuel Cost Calc/index.html">
+                    <h2 id="page1_title">Fuel Cost Calculator</h2>
+                </a>
+            </div>
+            <!-- ========================================================================================================== -->
+            <div class="post-1-preview" id="post_1_preview">
+                <a href="Weather App/index.html">
+                    <h2 id="page1_title">Weather App</h2>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <h3>
+        <footer id="page-footer">Website By Maaz</footer>
+    </h3>
+</body>
+
+</html>
